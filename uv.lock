@@ -867,17 +867,17 @@ wheels = [
 
 [[package]]
 name = "flask-marshmallow"
-version = "0.15.0"
+version = "0.14.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "flask" },
     { name = "marshmallow", version = "3.22.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
     { name = "marshmallow", version = "3.26.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
-    { name = "packaging" },
+    { name = "six" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ac/8b/5c59b930375226c7d1d49b39d00a36696febb6fc1934aa82ce4f2c09cd0f/flask-marshmallow-0.15.0.tar.gz", hash = "sha256:2083ae55bebb5142fff98c6bbd483a2f5dbc531a8bc1be2180ed5f75e7f3fccc", size = 38240, upload-time = "2023-04-05T17:18:40.17Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/71/fa8f87753c0c1a42c45a32f7048dff79993cf45cf62d89ef53f87412f3c8/flask-marshmallow-0.14.0.tar.gz", hash = "sha256:bd01a6372cbe50e36f205cfff0fc5dab0b7b662c4c8b2c4fc06a3151b2950950", size = 36001, upload-time = "2020-09-28T03:38:47.622Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1f/2a/eeb3db46209410d4add2c369ad73e3340c314196b08d1895ac972eb38bd7/flask_marshmallow-0.15.0-py2.py3-none-any.whl", hash = "sha256:ce08a153f74da6ebfffd8065d1687508b0179df37fff7fc0c8f28ccfb64f1b56", size = 9671, upload-time = "2023-04-05T17:18:38.763Z" },
+    { url = "https://files.pythonhosted.org/packages/bf/a1/eb163776684d5f03ca34a582fe4859ad9acfbb9835aed2e5c87162931a22/flask_marshmallow-0.14.0-py2.py3-none-any.whl", hash = "sha256:2adcd782b5a4a6c5ae3c96701f320d8ca6997995a52b2661093c56cc3ed24754", size = 10039, upload-time = "2020-09-28T03:38:46.517Z" },
 ]
 
 [[package]]
@@ -2079,6 +2079,8 @@ dependencies = [
     { name = "scipy", version = "1.10.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
     { name = "scipy", version = "1.13.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.9.*'" },
     { name = "scipy", version = "1.15.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "setuptools", version = "75.3.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "setuptools", version = "80.9.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
     { name = "sqlalchemy" },
     { name = "webargs" },
     { name = "werkzeug" },
@@ -2114,7 +2116,7 @@ requires-dist = [
     { name = "flask-caching", specifier = ">=1.9,<2.0" },
     { name = "flask-debugtoolbar", specifier = ">=0.11,<1.0" },
     { name = "flask-login", specifier = ">=0.5,<1.0" },
-    { name = "flask-marshmallow", specifier = ">=0.10,<1.0" },
+    { name = "flask-marshmallow", specifier = ">=0.10,<0.15" },
     { name = "flask-migrate", specifier = ">=2.5,<3.0" },
     { name = "flask-restful", specifier = ">=0.3,<1.0" },
     { name = "flask-sqlalchemy", specifier = ">=2.4,<3.0" },
@@ -2123,6 +2125,7 @@ requires-dist = [
     { name = "flatten-json", specifier = ">=0.1,<1.0" },
     { name = "future", specifier = ">=0.18,<1.0" },
     { name = "gunicorn", marker = "extra == 'prod'", specifier = ">19.7,<21.0" },
+    { name = "importlib-metadata", marker = "python_full_version < '3.8'", specifier = ">=1.0" },
     { name = "itsdangerous", specifier = ">=1.1,<2.0" },
     { name = "jinja2", specifier = ">=2.11,<3.0" },
     { name = "livereload", marker = "extra == 'dev'", specifier = ">=2.5,<3.0" },
@@ -2145,6 +2148,7 @@ requires-dist = [
     { name = "querystring-parser", specifier = ">=1.2,<2.0" },
     { name = "scikit-learn", specifier = ">=1.2.0,<2.0" },
     { name = "scipy", specifier = ">=1.5,<2.0" },
+    { name = "setuptools" },
     { name = "sqlalchemy", specifier = ">=1.1,<2.0" },
     { name = "webargs", specifier = ">=5.5,<6.0" },
     { name = "webtest", marker = "extra == 'dev'", specifier = ">=2.0,<3.0" },
